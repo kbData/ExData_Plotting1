@@ -2,7 +2,6 @@ source("./readData.R")
 data<-readData()
 png(file="plot4.png")
 par(bg="transparent", mfrow=c(2,2))
-par(mfrow=c(2,2))
 with(data,
 {
         plot(datetime, Global_active_power, type="l", xlab="", ylab="Global Active Power")
