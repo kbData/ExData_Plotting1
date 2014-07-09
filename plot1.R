@@ -1,5 +1,6 @@
 source("./readData.R")
 data<-readData()
 png(file="plot1.png")
+par(bg="transparent")
 hist(data$Global_active_power,col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
 dev.off()

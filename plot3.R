@@ -1,6 +1,7 @@
 source("./readData.R")
 data<-readData()
 png(file="plot3.png")
+par(bg="transparent")
 with(data,
         {
         plot(datetime, Sub_metering_1, type="l", xlab="",ylab="Energy sub metering")
